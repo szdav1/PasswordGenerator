@@ -162,7 +162,7 @@ void password_set_charset(char* buffer, charset_t* charset, password_t* passwd, 
 
   memset(chars, 0, 95);
 
-  while (size == 0)
+  while (size)
   {
     charset_display(charset, prompts);
     ask_for_input(buffer, prompts);
